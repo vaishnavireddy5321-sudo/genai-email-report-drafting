@@ -1,11 +1,15 @@
-flowchart TD
-    Frontend[React.js with TypeScript Frontend<br/>Presentation Layer]
-    Backend[Flask REST API<br/>Application Layer]
-    Database[(PostgreSQL<br/>Data Layer)]
-    Gemini[Google Gemini API<br/>AI Service Layer]
-    
-    Frontend -->|REST API| Backend
-    Backend -->|ORM/SQL| Database
-    Backend -->|API Calls| Gemini
+---
+config:
+  layout: elk
+---
+flowchart TB
+    Frontend["React.js with TypeScript<br>Presentation Layer"] -->|REST API| Backend["Flask REST API<br>Application Layer"]
+    Backend -->|ORM/SQL| Database[("PostgreSQL<br>Data Layer")]
+    Backend -->|API Calls| Gemini["Google Gemini API<br>AI Service Layer"]
     Gemini -->|Generated Content| Backend
     Backend -->|Response| Frontend
+
+    style Frontend fill:#E8F0FE,stroke:#5F8DFF,stroke-width:2px
+    style Backend fill:#E9F7EF,stroke:#3FA796,stroke-width:2px
+    style Database fill:#FFF4E6,stroke:#FF9800,stroke-width:2px
+    style Gemini fill:#F3E5F5,stroke:#9C27B0,stroke-width:2px
