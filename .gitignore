@@ -12,7 +12,7 @@
 *.env
 .copilot/
 .cursor/
-.github/
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -423,4 +423,4 @@ FodyWeavers.xsd
 ## Ignore these
 .copilot/
 .cursor/
-.github/
+
