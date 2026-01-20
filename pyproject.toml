@@ -1,0 +1,97 @@
+[project]
+name = "genai-email-report-drafting"
+version = "0.1.0"
+description = "AI-driven application that generates professional emails and reports using Google Gemini"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Viswanatha Swamy P K", email = ""}
+]
+keywords = [
+    "genai",
+    "email-generation",
+    "report-generation",
+    "google-gemini",
+    "flask",
+    "react",
+    "typescript",
+    "postgresql"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business",
+]
+
+# Note: Backend Python dependencies are defined in backend/requirements.txt
+# This is an N-Tier architecture project with separate frontend (React/TypeScript)
+# and backend (Flask) components. Install backend dependencies from:
+#   cd src/backend && pip install -r requirements.txt
+#   or: cd src/backend && uv pip install -r requirements.txt
+# Backend API docs are served with Swagger UI (see src/backend/requirements.txt).
+
+[project.optional-dependencies]
+dev = [
+    "black==24.10.0",
+    "isort==5.13.2",
+    "flake8==7.1.1",
+    "mypy==1.14.1",
+    "pytest==8.3.4",
+    "pytest-cov==6.0.0",
+    "pytest-asyncio==0.25.2",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | venv
+  | __pycache__
+  | \.pytest_cache
+  | \.coverage
+  | build
+  | dist
+  | node_modules
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+skip_glob = ["venv/*", ".venv/*", "*.pyc", "node_modules/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/backend/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short --strict-markers"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true

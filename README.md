@@ -1,15 +1,15 @@
 # GenAI Email & Report Drafting System
 
 [![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/SrivariHSSPL-2026/genai-email-report-drafting)
-[![Architecture](https://img.shields.io/badge/Architecture-N--Tier-FF6B35)](docs/05_architecture_plan.md)
+[![Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/Srivari-Hema-SSPL-2026/genai-email-report-drafting)
+[![Architecture](https://img.shields.io/badge/Architecture-N--Tier-FF6B35)](docs/06_architecture_plan.md)
 [![Python](https://img.shields.io/badge/Python-3.12.10-ABCDEF?logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-pink?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![Flask](https://img.shields.io/badge/Flask-3.x-green?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13%2B-brown?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%2B-brown?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-API-yellow?logo=googlegemini&logoColor=white)](https://ai.google.dev/)
-[![Maintainer](https://img.shields.io/badge/Maintainer-Viswanatha%20Swamy%20P%20K-blue)](https://github.com/SrivariHSSPL-2026)
+[![Maintainer](https://img.shields.io/badge/Maintainer-Viswanatha%20Swamy%20P%20K-blue)](https://github.com/Srivari-Hema-SSPL-2026)
 
 An AI-driven application that generates professional emails and reports using `Google Gemini`, built with an `N-Tier enterprise architecture` comprising `React.js with TypeScript`, `Flask`, and `PostgreSQL`, with `JWT-based authentication and role-based access control`.
 
@@ -26,20 +26,13 @@ An AI-driven application that generates professional emails and reports using `G
 
 - [Abstract](#-abstract)
 - [Problem Statement](#-problem-statement)
-- [Who This Is For / Who This Is Not For](#-who-this-is-for--who-this-is-not-for)
-- [What This Project Covers](#-what-this-project-covers)
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
 - [Technology Stack](#-technology-stack)
-- [Quick Start](#-quick-start)
 - [Repository Structure](#-repository-structure)
-- [Documentation](#-documentation)
-- [Key Principles](#-key-principles)
-- [Success Criteria](#-success-criteria)
-- [Development & Quality Assurance](#️-development--quality-assurance)
-- [Contributing](#-contributing)
-- [About & Community](#-about--community)
+- [Quick Start](#-quick-start)
 - [License](#-license)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -47,11 +40,9 @@ An AI-driven application that generates professional emails and reports using `G
 
 Professional communication through emails and reports is a time-consuming and repetitive activity in corporate and academic environments. This project presents an `AI-Driven Email and Report Drafting System` that leverages `Generative Artificial Intelligence (GenAI)` using `Google Gemini Large Language Models` to automatically generate high-quality, context-aware written content.
 
-The system is implemented using an `N-Tier architecture` comprising a `React.js with TypeScript frontend`, a `Flask-based RESTful backend`, and a `PostgreSQL database`. Secure access control is enforced using `JWT-based authentication` with `Role-Based Access Control (RBAC)`. The solution demonstrates how Generative AI can be integrated into enterprise-grade software systems while maintaining controlled complexity suitable for academic evaluation.
-
-The system employs `instruction-based prompt engineering` optimized for Google Gemini's instruction-following capabilities. Users can generate professional emails and reports by providing purpose, tone, and contextual inputs. All generated content is persisted in the database for future reference and auditing purposes.
-
 The project successfully demonstrates the practical application of Generative AI within a secure, enterprise-style architecture. By balancing simplicity and architectural rigor, the system provides a strong academic foundation while remaining extensible for real-world deployment scenarios.
+
+> 📖 **For the complete abstract (single source of truth), see [docs/01_abstract.md](docs/01_abstract.md).**
 
 ---
 
@@ -69,119 +60,15 @@ This project addresses these challenges by providing a secure, enterprise-grade 
 
 ---
 
-## 👥 Who This Is For / Who This Is Not For
-
-### ✅ Who This Is For
-
-- Students and Academics: Learning N-Tier architecture, GenAI integration, and enterprise software development
-- Developers: Building AI-powered applications with proper authentication and data persistence
-- Engineers: Understanding how to integrate Google Gemini API into production systems
-- Architects: Studying enterprise-grade architecture patterns and security best practices
-- Educators: Teaching modern web development with AI integration
-
-### ❌ Who This Is Not For
-
-- Those seeking a production-ready SaaS solution without customization
-- People looking for a simple AI chatbot (this is a specialized document generation system)
-- Those who want to avoid setting up databases and backend infrastructure
-- Anyone expecting a no-code solution (this requires technical setup)
-
----
-
-## 📚 What This Project Covers
-
-**This IS:**
-
-- A complete N-Tier enterprise application with frontend, backend, and database
-- Production-grade implementation with authentication, authorization, and audit logging
-- Practical GenAI integration using Google Gemini API
-- Comprehensive prompt engineering strategies
-- Full-stack development example (React + Flask + PostgreSQL)
-- Educational reference for academic projects
-
-**This is NOT:**
-
-- A commercial SaaS product (it's an educational/academic project)
-- A simple AI tool (it's a full enterprise application)
-- A tutorial or step-by-step guide (it's a complete implementation)
-- A production deployment guide (focuses on development and learning)
-
-### Core Capabilities
-
-- AI-Powered Content Generation: Professional emails and reports using Google Gemini
-- Enterprise Architecture: N-Tier design with clear separation of concerns
-- Security: JWT authentication, RBAC, secure password hashing, audit trails
-- Data Persistence: PostgreSQL with proper relationships and indexing
-- Modern Frontend: React.js with TypeScript, Redux Toolkit, Tailwind CSS
-- RESTful API: Flask backend with comprehensive error handling
-- Testing: 127+ unit and integration tests
-
----
-
 ## 🎯 Key Features
 
-- ✨ **AI-Powered Content Generation**
-  - Email generation with customizable tone (professional, formal, casual, friendly)
-  - Report generation with multiple structures (executive summary, detailed, bullet points)
-  - Context-aware content using Google Gemini Large Language Models
-  - Real-time generation with proper error handling and retry logic
+> **✨ Feature Highlights**: For a detailed breakdown of all system features, see [Key Features Documentation](docs/02_key-features.md).
 
-- 🧱 **Enterprise-Grade N-Tier Architecture**
-  - Presentation Layer: React.js with TypeScript, Redux Toolkit, and Tailwind CSS
-  - Application Layer: Flask REST API with JWT authentication and RBAC
-  - Data Layer: PostgreSQL with SQLAlchemy ORM and proper relationships
-  - AI Service Layer: Google Gemini API integration with prompt engineering
-  - Clear separation of concerns enabling scalability and maintainability
-
-- 🔐 **Secure Authentication & Authorization**
-  - JWT-based stateless authentication with token refresh support
-  - Secure password hashing using Werkzeug security utilities
-  - Protected API endpoints with role-based access control
-  - Login/Register pages with proper validation and error handling
-
-- 👥 **Role-Based Access Control (RBAC)**
-  - `User Role`: Generate documents, view personal history
-  - `Admin Role`: Full system access including audit logs and system metrics
-  - Admin dashboard with system summary, audit log viewer, and user management
-  - Route protection at both frontend (PrivateRoute, AdminRoute) and backend levels
-
-- 🗄️ **Comprehensive Data Persistence**
-  - User accounts with secure credential storage
-  - Document history with metadata (tone, structure, timestamps)
-  - Complete audit trail for all system actions (login, document generation, admin operations)
-  - Foreign key relationships with cascade delete for data integrity
-
-- 🧠 **Advanced Prompt Engineering**
-  - Structured prompt construction optimized for Google Gemini
-  - Tone selection: Professional, Formal, Casual, Friendly
-  - Report structures: Executive Summary, Detailed, Bullet Points
-  - Instruction-based prompts with role definition and format constraints
-  - Input validation and sanitization before API calls
-
-- 📜 **Document History & Management**
-  - User-specific document history with filtering (all, email, report)
-  - Document detail view with full content and metadata
-  - Chronological sorting and pagination support
-  - Cross-user access prevention for security
-
-- 📊 **Admin Dashboard & Audit System**
-  - System summary with user counts, document statistics, and recent activity
-  - Comprehensive audit log viewer with pagination
-  - Real-time metrics and activity monitoring
-  - Request correlation IDs for traceability across system layers
-
-- 🧪 **Comprehensive Testing Suite**
-  - 127+ unit and integration tests covering all major components
-  - Backend tests with mocked Gemini API (no external dependencies)
-  - Frontend TypeScript compilation and ESLint validation
-  - Test coverage for authentication, RBAC, document generation, and admin features
-
-- 🚀 **Production-Ready Features**
-  - Error handling with user-friendly messages
-  - Request correlation tracking for debugging
-  - API rate limiting and timeout management
-  - Environment-based configuration (development, production, test)
-  - CI/CD workflows for automated testing and validation
+- **AI-Powered Content Generation**: Professional emails and reports using Google Gemini
+- **Enterprise Architecture**: N-Tier design with clear separation of concerns
+- **Security & RBAC**: JWT authentication, secure password hashing, and role-based access
+- **Comprehensive Persistence**: PostgreSQL with full audit logging and history tracking
+- **Production Readiness**: Thorough testing, error handling, and scalable design
 
 ---
 
@@ -189,104 +76,11 @@ This project addresses these challenges by providing a secure, enterprise-grade 
 
 ### High-Level Architecture Diagram
 
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    Frontend["React.js with TypeScript<br>Presentation Layer"] -->|REST API| Backend["Flask REST API<br>Application Layer"]
-    Backend -->|ORM/SQL| Database[("PostgreSQL<br>Data Layer")]
-    Backend -->|API Calls| Gemini["Google Gemini API<br>AI Service Layer"]
-    Gemini -->|Generated Content| Backend
-    Backend -->|Response| Frontend
-
-    style Frontend fill:#E8F0FE,stroke:#5F8DFF,stroke-width:2px
-    style Backend fill:#E9F7EF,stroke:#3FA796,stroke-width:2px
-    style Database fill:#FFF4E6,stroke:#FF9800,stroke-width:2px
-    style Gemini fill:#F3E5F5,stroke:#9C27B0,stroke-width:2px
-```
+![High-Level Architecture Diagram](docs/diagrams/system-architecture-simple.png)
 
 ### Detailed Architecture Diagram
 
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    Frontend["React.js with TypeScript<br/>Presentation Layer"] -->|REST API| Backend["Flask REST API<br/>Application Layer"]
-    Backend -->|ORM/SQL| Database[("PostgreSQL<br/>Data Layer")]
-    Backend -->|API Calls| Gemini["Google Gemini API<br/>AI Service Layer"]
-    Gemini -->|Generated Content| Backend
-    Backend -->|Response| Frontend
-    
-    subgraph "Frontend Components"
-        Login["Login/Register"]
-        EmailGen["Email Generator"]
-        ReportGen["Report Generator"]
-        History["Document History"]
-        Admin["Admin Dashboard"]
-    end
-    
-    subgraph "Backend Services"
-        Auth["Authentication<br/>JWT + RBAC"]
-        Docs["Document Generation"]
-        Prompt["Prompt Engine"]
-        AdminAPI["Admin API"]
-    end
-    
-    Frontend -.-> Login
-    Frontend -.-> EmailGen
-    Frontend -.-> ReportGen
-    Frontend -.-> History
-    Frontend -.-> Admin
-    
-    Backend -.-> Auth
-    Backend -.-> Docs
-    Backend -.-> Prompt
-    Backend -.-> AdminAPI
-
-    style Frontend fill:#E8F0FE,stroke:#5F8DFF,stroke-width:2px
-    style Backend fill:#E9F7EF,stroke:#3FA796,stroke-width:2px
-    style Database fill:#FFF4E6,stroke:#FF9800,stroke-width:2px
-    style Gemini fill:#F3E5F5,stroke:#9C27B0,stroke-width:2px
-```
-
-**ASCII Fallback:**
-
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│                    Presentation Layer                           │
-│              React.js with TypeScript Frontend                  │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐         │
-│  │  Login   │  │  Email   │  │  Report  │  │  History │         │
-│  │ Register │  │ Generator│  │ Generator│  │  Admin   │         │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────┘         │
-└───────────────────────┬─────────────────────────────────────────┘
-                        │ REST API (HTTP/JSON)
-                        │ JWT Authentication
-                        ↓
-┌─────────────────────────────────────────────────────────────────┐
-│                    Application Layer                            │
-│                      Flask REST API                             │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
-│  │ Auth Service │  │  Document    │  │   Prompt     │           │
-│  │ JWT + RBAC   │  │  Generation  │  │   Engine     │           │
-│  └──────────────┘  └──────────────┘  └──────────────┘           │
-└───────────┬──────────────────────────────┬──────────────────────┘
-            │                              │
-            │ ORM/SQL                      │ API Calls
-            ↓                              ↓
-┌───────────────────────┐    ┌──────────────────────────────────┐
-│     Data Layer        │    │      AI Service Layer            │
-│   PostgreSQL          │    │   Google Gemini API              │
-│                       │    │                                  │
-│  • Users              │    │  • Content Generation            │
-│  • Documents          │    │  • Prompt Processing             │
-│  • Audit Logs         │    │  • Response Handling             │
-└───────────────────────┘    └──────────────────────────────────┘
-```
+![Detailed Architecture Diagram](docs/diagrams/system-architecture.png)
 
 ### Architecture Layers
 
@@ -310,25 +104,65 @@ flowchart TB
 
 ---
 
-## 📞 About & Community
+## 📂 Repository Structure
 
-### [Swamy's Tech Skills Academy](https://www.linkedin.com/company/swamy-s-tech-skills-academy) & [ShyvnTech](https://www.linkedin.com/company/shyvntech)
+The project is organized into layers following the N-Tier architecture pattern:
 
-This repository is stewarded and supported by **Swamy's Tech Skills Academy** and **ShyvnTech**. It demonstrates enterprise-grade software development practices and serves as an educational reference for modern full-stack development with AI integration.
-
-You can connect with the community to:
-
-- Learn enterprise architecture patterns
-- Study GenAI integration best practices
-- Explore modern web development techniques
-- Participate in knowledge-sharing discussions
-- Access mentoring and training opportunities
+| Directory | Layer | Description |
+|-----------|-------|-------------|
+| `src/frontend/` | **Presentation** | React.js application (Coming in Module 3) |
+| `src/backend/` | **Application** | Flask REST API (Coming in Module 2) |
+| `infra/database/` | **Data** | PostgreSQL database schema and migrations |
+| `infra/` | **Infrastructure** | Docker Compose configuration for local development |
+| `docs/` | **Documentation** | Project guides, architecture diagrams, and requirements |
 
 ---
 
-## 📝 Attribution
+## 🚀 Quick Start
 
-All content in this repository is original and transformative. While inspired by various learning sources and best practices, the implementation, architecture, prompts, and documentation are created from first principles to provide a unique educational experience.
+### Prerequisites
+
+- Python 3.12.10
+- Node.js 18+
+- PostgreSQL 13+ (Docker/Podman Compose recommended)
+- Google Gemini API key
+
+**For complete setup guide with detailed instructions, see [Setup Guide](docs/03_setup.md).**
+
+### Quick Setup
+
+```powershell
+# 1. Start PostgreSQL (Docker/Podman Compose - recommended)
+cd infra
+docker compose up -d
+podman compose up -d
+
+# 2. Setup Backend
+# Navigate back to root
+cd ..
+
+# Create and activate virtual environment at root
+uv venv
+.venv\Scripts\Activate.ps1
+
+# Navigate to backend directory
+cd src/backend
+
+# Install dependencies
+uv pip install -r requirements.txt --link-mode=copy
+
+# Set environment variables
+$env:DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/genai_email_report"
+$env:GEMINI_API_KEY = "your-api-key"
+$env:JWT_SECRET_KEY = "your-secret-key"
+
+python app.py  # Backend runs on http://localhost:5000
+
+# 3. Setup Frontend (new terminal)
+cd src/frontend
+npm install
+npm run dev  # Frontend runs on http://localhost:5173
+```
 
 ---
 
@@ -349,7 +183,7 @@ This project is intended for **academic and educational use**.
 
 ---
 
-> 🎓 **GenAI Email & Report Drafting System** — Designed and maintained by `Vattem Hema`  
+> 🎓 **GenAI Email & Report Drafting System** — Designed and maintained by `Viswanatha Swamy P K`  
 > Demonstrating enterprise-grade architecture with Generative AI integration.  
 > © 2026 Swamy's Tech Skills Academy, ShyvnTech & Srivari Software Solutions
 
